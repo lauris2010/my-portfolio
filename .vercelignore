@@ -1,0 +1,4 @@
+# Ignore Sanity
+studio/
+sanity.json
+sanity-debug.log
