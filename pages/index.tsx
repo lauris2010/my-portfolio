@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Experience, PageInfo, Project, Skill, Social } from "@/typings";
@@ -28,6 +29,9 @@ export default function Home({
       <Header socials={socials} />
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
+      </section>
+      <section id="about" className="snap-center">
+        <About pageInfo={pageInfo} />
       </section>
     </div>
   );
