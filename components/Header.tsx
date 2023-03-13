@@ -15,7 +15,7 @@ type Props = {
   socials: Social[];
 };
 
-const Header = () => {
+const Header = ({ socials }: Props) => {
   return (
     <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
       <motion.div
@@ -34,11 +34,14 @@ const Header = () => {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIconNoSSR
-          url="https://github.com/lauris2010"
-          fgColor="gray"
-          bgColor="transparent"
-        />
+        {socials.map((social) => (
+          <SocialIconNoSSR
+            key={social._id}
+            url={social.url}
+            fgColor="gray"
+            bgColor="transparent"
+          />
+        ))}
       </motion.div>
       <Link href="#contact">
         <motion.div
