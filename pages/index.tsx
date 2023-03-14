@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import { Experience, PageInfo, Project, Skill, Social } from "@/typings";
 import { fetchExperiences } from "@/utils/fetchExperiences";
@@ -36,6 +37,9 @@ export default function Home({
       </section>
       <section id="experience" className="snap-center">
         <WorkExperience experiences={experiences} />
+      </section>
+      <section id="skills" className="snap-start">
+        <Skills skills={skills} />
       </section>
     </div>
   );
