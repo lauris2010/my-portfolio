@@ -1,11 +1,11 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { urlFor } from '@/sanity'
-import { PageInfo } from '@/typings'
+import React from "react";
+import { motion } from "framer-motion";
+import { urlFor } from "@/sanity";
+import { PageInfo } from "@/typings";
 
 type Props = {
-  pageInfo: PageInfo
-}
+  pageInfo: PageInfo;
+};
 
 function About({ pageInfo }: Props) {
   return (
@@ -42,8 +42,10 @@ function About({ pageInfo }: Props) {
       />
       <div className="space-y-10 px-0 md:px-10 sm:text-center lg:text-left">
         <h4 className="text-4xl font-semibold">
-          Here is a{' '}
-          <span className="underline decoration-[#F7AB0A]/50">little</span>{' '}
+          Here is a{" "}
+          <span className="underline underline-offset-4 decoration-[#63048B]/50">
+            little
+          </span>{" "}
           background
         </h4>
         <p className="text-sm">
@@ -53,7 +55,7 @@ function About({ pageInfo }: Props) {
         </p>
       </div>
     </motion.div>
-  )
+  );
 }
 
-export default About
+export default About;

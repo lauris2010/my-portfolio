@@ -40,6 +40,7 @@ const Header = ({ socials }: Props) => {
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
+            className="border border-transparent hover:border-[#63048B]/90 rounded-lg transition duration-300 hover:ease-in-out ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 "
           />
         ))}
       </motion.div>
@@ -58,7 +59,7 @@ const Header = ({ socials }: Props) => {
           transition={{
             duration: 1.5,
           }}
-          className="flex flex-row items-center text-gray-300 cursor-pointer"
+          className="flex flex-row items-center text-gray-300 cursor-pointer border border-transparent hover:border-[#63048B]/90 rounded-lg transition duration-300 hover:ease-in-out ease-in-out delay-15 "
         >
           <SocialIconNoSSR
             className="cursor-pointer"
@@ -66,7 +67,7 @@ const Header = ({ socials }: Props) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2 ">
             Get In Touch
           </p>
         </motion.div>

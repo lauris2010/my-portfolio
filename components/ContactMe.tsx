@@ -29,23 +29,25 @@ function ContactMe({ pageInfo }: Props) {
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           I Have got what you need.{" "}
-          <span className="decoration-[#F7AB0A]/50 underline">Lets Talk</span>
+          <span className="decoration-[#63048B]/50 underline underline-offset-4">
+            Lets Talk
+          </span>
         </h4>
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <PhoneIcon className="text-[#63048B] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+37062593930</p>
           </div>
         </div>
         <div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="text-[#63048B] h-7 w-7 animate-pulse" />
             <p className="text-2xl">{pageInfo?.email}</p>
           </div>
         </div>
         <div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-[#63048B] h-7 w-7 animate-pulse" />
             <p className="text-2xl">Kaunas</p>
           </div>
         </div>
@@ -80,7 +82,7 @@ function ContactMe({ pageInfo }: Props) {
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#63048B] py-5 px-10 rounded-md text-white font-bold text-lg"
           >
             Submit
           </button>

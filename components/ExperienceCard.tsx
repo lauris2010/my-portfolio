@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
-import { urlFor } from '@/sanity'
-import { Experience } from '@/typings'
+import { urlFor } from "@/sanity";
+import { Experience } from "@/typings";
 
 type Props = {
-  experience: Experience
-}
+  experience: Experience;
+};
 
 const ExperienceCard = ({ experience }: Props) => {
   return (
@@ -25,7 +25,7 @@ const ExperienceCard = ({ experience }: Props) => {
           duration: 1.2,
         }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-contain "
+        className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-center "
         src={urlFor(experience?.companyImage).url()}
         alt=""
       />
@@ -43,9 +43,9 @@ const ExperienceCard = ({ experience }: Props) => {
           ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
-          {new Date(experience.dateStarted).toDateString()} -{' '}
+          {new Date(experience.dateStarted).toDateString()} -{" "}
           {experience.isCurrentlyWorkingHere
-            ? 'Present'
+            ? "Present"
             : new Date(experience.dateEnded).toDateString()}
         </p>
         <ul className="list-disc space-y-2 ml-5 text-large">
@@ -55,7 +55,7 @@ const ExperienceCard = ({ experience }: Props) => {
         </ul>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default ExperienceCard
+export default ExperienceCard;

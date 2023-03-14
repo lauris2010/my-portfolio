@@ -21,7 +21,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#360b47]">
         {projects.map((project, i) => (
           <div
             key={i}
@@ -47,7 +47,7 @@ function Projects({ projects }: Props) {
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl font-semibold text-center">
-                <span className="underline decoration-[#F7AB0A]">
+                <span className="underline decoration-[#63048B] underline-offset-4">
                   Case study {i + 1} of {projects.length}
                 </span>{" "}
                 {project.title}
@@ -70,7 +70,7 @@ function Projects({ projects }: Props) {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[30%] bg-[#63048B]/10 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
 }

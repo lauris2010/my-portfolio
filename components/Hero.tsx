@@ -33,7 +33,7 @@ function Hero({ pageInfo }: Props) {
         </h2>
         <h1 className="text-4xl lg:5xl font-semibold px-10">
           <span className="mr-2">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="#63048B" />
         </h1>
         <div className="pt-4">
           <Link href="#about">

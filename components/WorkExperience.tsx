@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
-import { Experience } from '@/typings'
+import { Experience } from "@/typings";
 
-import ExperienceCard from './ExperienceCard'
+import ExperienceCard from "./ExperienceCard";
 
 type Props = {
-  experiences: Experience[]
-}
+  experiences: Experience[];
+};
 
 const WorkExperience = ({ experiences }: Props) => {
   return (
@@ -27,13 +27,13 @@ const WorkExperience = ({ experiences }: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#F7AB0A]">
+      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#360b47]">
         {experiences?.map((experience) => (
           <ExperienceCard key={experience._id} experience={experience} />
         ))}
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default WorkExperience
+export default WorkExperience;
