@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ContactMe from "@/components/ContactMe";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -44,6 +45,9 @@ export default function Home({
       </section>
       <section id="projects" className="snap-start">
         <Projects projects={projects} />
+      </section>
+      <section id="contact" className="snap-start">
+        <ContactMe pageInfo={pageInfo} />
       </section>
     </div>
   );
