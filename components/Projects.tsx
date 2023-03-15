@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { urlFor } from "@/sanity";
 import { Project } from "@/typings";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -43,7 +44,7 @@ function Projects({ projects }: Props) {
                 once: true,
               }}
               className="w-74 h-72"
-              src="https://img.freepik.com/free-vector/blank-screen-laptop-gadget-icon-white-background_1308-45999.jpg?w=740&t=st=1677957047~exp=1677957647~hmac=848081c880db133d045489d701feec21eceb9d3ab3c4f3babe328e1130e92d8b"
+              src={urlFor(project.image).url()}
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl font-semibold text-center">
@@ -55,7 +56,7 @@ function Projects({ projects }: Props) {
               <div className="flex items-center space-x-2 justify-center">
                 {project?.technologies.map((tech) => (
                   <img
-                    className="h-10 w-10"
+                    className="h-10 w-10 rounded-full object-contain "
                     key={tech._id}
                     src={urlFor(tech.image).url()}
                     alt={urlFor(tech.image).url()}
@@ -65,6 +66,18 @@ function Projects({ projects }: Props) {
               <p className="text-lg text-center md:text-left">
                 {project.summary}
               </p>
+              <div className="flex items-center space-x-2 justify-center">
+                <div>
+                  <Link href={project?.linkToBuild}>
+                    <button className="heroButton">link to build</button>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={project?.linkToBuild}>
+                    <button className="heroButton">link to Github</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         ))}

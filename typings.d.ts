@@ -51,10 +51,12 @@ export interface Experience extends SanityBody {
 }
 
 export interface Project extends SanityBody {
+  image: image
   technologies: Technology[]
   summary: string
   title: string
   _type: 'project'
+  linkToBuild: string
 }
 
 export interface Social extends SanityBody {
