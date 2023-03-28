@@ -48,11 +48,7 @@ function About({ pageInfo }: Props) {
           </span>{" "}
           background
         </h4>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tempore
-          eius quo numquam porro magni suscipit sunt odit cumque, ratione
-          possimus non repellendus nemo earum sed esse placeat laborum ipsam!
-        </p>
+        <p className="text-sm">{pageInfo.backgroundInformation}</p>
       </div>
     </motion.div>
   );

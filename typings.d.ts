@@ -57,6 +57,7 @@ export interface Project extends SanityBody {
   title: string
   _type: 'project'
   linkToBuild: string
+  linkToDev: string
 }
 
 export interface Social extends SanityBody {

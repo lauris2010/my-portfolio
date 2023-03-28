@@ -21,7 +21,6 @@ function Projects({ projects }: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#360b47]">
         {projects.map((project, i) => (
           <div
@@ -63,7 +62,7 @@ function Projects({ projects }: Props) {
                   />
                 ))}
               </div>
-              <p className="text-lg text-center md:text-left">
+              <p className="text-md text-center md:text-left">
                 {project.summary}
               </p>
               <div className="flex items-center space-x-2 justify-center">
@@ -72,17 +71,11 @@ function Projects({ projects }: Props) {
                     <button className="heroButton">link to build</button>
                   </Link>
                 </div>
-                <div>
-                  <Link href={project?.linkToBuild}>
-                    <button className="heroButton">link to Github</button>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-
       <div className="w-full absolute top-[30%] bg-[#63048B]/10 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
