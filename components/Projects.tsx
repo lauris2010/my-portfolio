@@ -45,8 +45,8 @@ function Projects({ projects }: Props) {
               className="w-74 h-72"
               src={urlFor(project.image).url()}
             />
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-3xl font-semibold text-center">
+            <div className="space-y-5 px-0 md:px-10 max-w-6xl">
+              <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#63048B] underline-offset-4">
                   Case study {i + 1} of {projects.length}
                 </span>{" "}
@@ -62,7 +62,7 @@ function Projects({ projects }: Props) {
                   />
                 ))}
               </div>
-              <p className="text-md text-center md:text-left">
+              <p className="text-xs md:text-sm xl:text-md text-center md:text-left">
                 {project.summary}
               </p>
               <div className="flex items-center space-x-2 justify-center">
