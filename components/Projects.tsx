@@ -66,11 +66,24 @@ function Projects({ projects }: Props) {
                 {project.summary}
               </p>
               <div className="flex items-center space-x-2 justify-center">
-                <div>
-                  <Link href={project?.linkToBuild}>
-                    <button className="heroButton">link to build</button>
-                  </Link>
-                </div>
+                {project?.linkToGithub ? (
+                  <div>
+                    <Link href={project?.linkToBuild}>
+                      <button className="heroButton">link to build</button>
+                    </Link>
+                  </div>
+                ) : (
+                  ""
+                )}
+                {project?.linkToGithub ? (
+                  <div>
+                    <Link href={project?.linkToGithub}>
+                      <button className="heroButton">link to repository</button>
+                    </Link>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>

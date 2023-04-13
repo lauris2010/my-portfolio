@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity/lib/exports'
+import { defineType} from 'sanity'
 
 export default defineType({
   name: 'project',
@@ -33,6 +33,11 @@ export default defineType({
     {
       name: 'linkToBuild',
       title: 'LinkToBuild',
+      type: 'url',
+    },
+    {
+      name: 'linkToGithub',
+      title: 'LinkToGithub',
       type: 'url',
     },
   ],

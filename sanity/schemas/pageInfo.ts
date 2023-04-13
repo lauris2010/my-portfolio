@@ -1,4 +1,4 @@
-import {defineType} from 'sanity/lib/exports'
+import {defineType} from 'sanity'
 
 export default defineType({
   name: 'pageInfo',
