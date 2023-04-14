@@ -40,5 +40,10 @@ export default defineType({
       title: 'LinkToGithub',
       type: 'url',
     },
+    {
+      name: "id",
+      title: 'Id',
+      type: 'number'
+    }
   ],
 })

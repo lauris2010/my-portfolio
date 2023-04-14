@@ -11,6 +11,8 @@ type Props = {
 };
 
 function Projects({ projects }: Props) {
+  const sortedProjects = [...projects].sort((a, b) => a.id - b.id);
+  console.log(sortedProjects);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,7 +24,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
       <div className="relative w-[90%] mb-8 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thin scrollbar-thumb-[#360b47]">
-        {projects.map((project, i) => (
+        {sortedProjects.map((project, i) => (
           <div
             key={i}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen "
