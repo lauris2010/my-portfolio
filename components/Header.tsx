@@ -17,7 +17,7 @@ type Props = {
 
 const Header = ({ socials }: Props) => {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
+    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-50 xl:items-center p-5">
       <motion.div
         initial={{
           x: -500,
@@ -38,9 +38,9 @@ const Header = ({ socials }: Props) => {
           <SocialIconNoSSR
             key={social._id}
             url={social.url}
-            fgColor="gray"
+            fgColor="White"
             bgColor="transparent"
-            className="border border-transparent hover:border-[#63048B]/90 rounded-lg transition duration-300 hover:ease-in-out ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 "
+            className="border border-transparent rounded-lg transition duration-300 hover:ease-in-out ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 "
           />
         ))}
       </motion.div>
@@ -64,10 +64,10 @@ const Header = ({ socials }: Props) => {
           <SocialIconNoSSR
             className="cursor-pointer"
             network="email"
-            fgColor="gray"
+            fgColor="white"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 pr-2 ">
+          <p className="uppercase hidden md:inline-flex text-sm text-white pr-2 ">
             Get In Touch
           </p>
         </motion.div>

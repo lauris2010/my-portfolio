@@ -9,8 +9,6 @@ type Props = {
 };
 
 function Projects({ projects }: Props) {
-  const sortedProjects = [...projects].sort((a, b) => a.id - b.id);
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -22,7 +20,7 @@ function Projects({ projects }: Props) {
         Projects
       </h3>
       <ProjectCard projects={projects} />
-      <div className="w-full absolute top-[30%] -z- bg-[#63048B]/10 left-0 h-[500px] -skew-y-12"></div>
+      <div className="w-full absolute top-[30%] bg-[#63048B]/10 left-0 h-[500px] -skew-y-12"></div>
     </motion.div>
   );
 }
