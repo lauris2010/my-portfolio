@@ -45,7 +45,7 @@ function Projects({ projects }: Props) {
               viewport={{
                 once: true,
               }}
-              className="w-74 h-72"
+              className="lg:w-74 lg:h-96 "
               src={urlFor(project.image).url()}
             />
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
@@ -65,7 +65,7 @@ function Projects({ projects }: Props) {
                   />
                 ))}
               </div>
-              <p className="text-xs md:text-sm xl:text-md text-center md:text-left">
+              <p className="text-xs md:text-sm xl:text-md md:text-center">
                 {project.summary}
               </p>
               <div className="flex items-center space-x-2 justify-center">
