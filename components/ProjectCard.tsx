@@ -58,23 +58,19 @@ const ProjectCard = ({ projects }: Props) => {
               {project.summary}
             </p>
             <div className="flex items-center space-x-2 justify-center">
-              {project?.linkToBuild ? (
+              {project?.linkToBuild && (
                 <div>
-                  <Link href={project?.linkToBuild}>
+                  <Link href={project?.linkToBuild} target="_blank">
                     <button className="heroButton">link to build</button>
                   </Link>
                 </div>
-              ) : (
-                ""
               )}
-              {project?.linkToGithub ? (
+              {project?.linkToGithub && (
                 <div>
-                  <Link href={project?.linkToGithub}>
+                  <Link href={project?.linkToGithub} target="_blank">
                     <button className="heroButton">link to repository</button>
                   </Link>
                 </div>
-              ) : (
-                ""
               )}
             </div>
           </div>
